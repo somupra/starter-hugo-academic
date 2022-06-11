@@ -22,7 +22,7 @@ feature:
     name: Programming and Systems
 
   - description:
-    icon: brackets-curly
+    icon: microchip
     icon_pack: fas
     name: Artificial Intelligence (ML/DL/RL)
 
