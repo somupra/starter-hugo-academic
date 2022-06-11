@@ -28,18 +28,21 @@ content:
   email: somupra9@gmail.com
   phone: Available on request
   contact_links:
-    - icon: Linkedin
-      icon_pack: fab
+    - icon: linkedin
+      icon_pack: fas
       name: Linkedin
       link: 'https://www.linkedin.com/in/somupra'
-    - icon: Facebook
-      icon_pack: fab
+    
+    - icon: facebook-square
+      icon_pack: fas
       name: Facebook
       link: 'https://www.facebook.com/somu.prajapati.10'
-    - icon: Instagram
-      icon_pack: fab
+    
+    - icon: instagram-square
+      icon_pack: fas
       name: Instagram
       link: 'https://www.instagram.com/somuwuuuu_/'    
+    
     - icon: twitter
       icon_pack: fab
       name: Twitter

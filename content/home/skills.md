@@ -7,7 +7,7 @@ widget: featurette
 headless: true
 
 # Order that this section appears on the page.
-weight: 30
+weight: 60
 
 title: Skills
 subtitle:
@@ -19,17 +19,22 @@ feature:
   - description:
     icon: code
     icon_pack: fas
-    name: Programming
-  
+    name: Programming and Systems
+
+  - description:
+    icon: brackets-curly
+    icon_pack: fas
+    name: Artificial Intelligence (ML/DL/RL)
+
   - description:
     icon: chess
     icon_pack: fas
-    name: Chess
+    name: Chess and Puzzles
 
   - description:
     icon: chart-line
     icon_pack: fas
-    name: Statistics
+    name: Data Analysis and Algorithms
   
   - description:
     icon: camera-retro
