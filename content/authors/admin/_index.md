@@ -28,7 +28,7 @@ education:
   courses:
     - course: Bachelors in Computer Science and Engineering
       institution: Indian Institute of Technology
-      year: 2019
+      year: 2022
 email: somupra9@gmail.com
 superuser: true
 highlight_name: true

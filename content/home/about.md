@@ -10,4 +10,3 @@ title: Biography
 #   background:
 #     image: img_0346.jpg
 ---
-hi somu here
