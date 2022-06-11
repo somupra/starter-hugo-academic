@@ -1,7 +1,7 @@
 ---
 title: Somu Prajapati
 role: Core Engineer @ Quantbox Research
-avatar_filename: ""
+avatar_filename: "avatar.png"
 bio: Interested in large scale low-latency distributed systems, Artificial
   Intelligence, Recommender Systems, Chess, and Anime.
 interests:
