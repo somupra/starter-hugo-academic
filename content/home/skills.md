@@ -17,13 +17,13 @@ subtitle:
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
   - description:
-    icon: fa-code
-    icon_pack: fab
+    icon: code
+    icon_pack: fas
     name: Programming
   
   - description:
-    icon: fa-chess
-    icon_pack: fab
+    icon: chess
+    icon_pack: fas
     name: Chess
 
   - description:
