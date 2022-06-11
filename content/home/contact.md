@@ -13,7 +13,7 @@ subtitle:
 
 content:
   # Automatically link email and phone or display as text?
-  autolink: true
+  autolink: false
 
   # Email form provider
   form:
@@ -28,6 +28,18 @@ content:
   email: somupra9@gmail.com
   phone: Available on request
   contact_links:
+    - icon: Linkedin
+        icon_pack: fab
+        name: Linkedin
+        link: 'https://www.linkedin.com/in/somupra'
+    - icon: Facebook
+        icon_pack: fab
+        name: Facebook
+        link: 'https://www.facebook.com/somu.prajapati.10'
+    - icon: Instagram
+        icon_pack: fab
+        name: Instagram
+        link: 'https://www.instagram.com/somuwuuuu_/'    
     - icon: twitter
       icon_pack: fab
       name: Twitter

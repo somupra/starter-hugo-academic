@@ -25,7 +25,7 @@ experience:
   - title: Analyst - Core Engineering
     company: Quantbox Research
     company_url: 'https://www.quantboxresearch.com/'
-    company_logo: qblogo
+    company_logo: qblogo_new
     location: Banglore, India
     date_start: '2022-07-01'
     date_end: ''
@@ -34,7 +34,7 @@ experience:
   - title: AI Lead Engineer
     company: T0uch
     company_url: 't0uch.io'
-    company_logo: touch
+    company_logo: touch_new
     location: New York, USA
     date_start: '2021-05-15'
     date_end: '2022-01-31'
@@ -43,7 +43,7 @@ experience:
   - title: ML Engineering Intern
     company: Mobileum
     company_url: 'https://www.mobileum.com/'
-    company_logo: mob
+    company_logo: mob_new
     location: Banglore, India
     date_start: '2021-06-01'
     date_end: '2021-08-31'
@@ -52,7 +52,7 @@ experience:
   - title: Software Development and Data Science Intern
     company: Pathfndr
     company_url: 'https://www.pathfndr.io/'
-    company_logo: pathfndr
+    company_logo: pathfndr_new
     location: Banglore, India
     date_start: '2020-04-01'
     date_end: '2020-06-30'
@@ -61,7 +61,7 @@ experience:
   - title: Student (B.Tech)
     company: Indian Institute of Technology, Kanpur
     company_url: 'https://iitk.ac.in'
-    company_logo: iitk
+    company_logo: iitk_new
     location: Kanpur, India
     date_start: '2018-07-20'
     date_end: '2022-06-30'
