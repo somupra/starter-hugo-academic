@@ -29,17 +29,17 @@ content:
   phone: Available on request
   contact_links:
     - icon: linkedin
-      icon_pack: fas
+      icon_pack: fab
       name: Linkedin
       link: 'https://www.linkedin.com/in/somupra'
     
-    - icon: facebook-square
-      icon_pack: fas
+    - icon: facebook
+      icon_pack: fab
       name: Facebook
       link: 'https://www.facebook.com/somu.prajapati.10'
     
-    - icon: instagram-square
-      icon_pack: fas
+    - icon: instagram
+      icon_pack: fab
       name: Instagram
       link: 'https://www.instagram.com/somuwuuuu_/'    
     

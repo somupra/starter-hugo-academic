@@ -14,12 +14,12 @@ social:
     icon_pack: fas
     link: /#contact
 
-  - icon: facebook-square
-    icon_pack: fas
+  - icon: facebook
+    icon_pack: fab
     link: 'https://www.facebook.com/somu.prajapati.10'
     
-  - icon: instagram-square
-    icon_pack: fas
+  - icon: instagram
+    icon_pack: fab
     link: 'https://www.instagram.com/somuwuuuu_/' 
 
   - icon: twitter
