@@ -26,7 +26,7 @@ experience:
     company: Quantbox Research
     company_url: 'https://www.quantboxresearch.com/'
     company_logo: qblogo_new
-    location: Banglore, India
+    location: Bangalore, India
     date_start: '2022-07-01'
     date_end: ''
     description: Maintaining and developing the inhouse trading systems.
@@ -44,7 +44,7 @@ experience:
     company: Mobileum
     company_url: 'https://www.mobileum.com/'
     company_logo: mob_new
-    location: Banglore, India
+    location: Bangalore, India
     date_start: '2021-06-01'
     date_end: '2021-08-31'
     description: Built a library agnostic inference server for Huge (upto 32Gbs) ML pipelines.
@@ -53,7 +53,7 @@ experience:
     company: Pathfndr
     company_url: 'https://www.pathfndr.io/'
     company_logo: pathfndr_new
-    location: Banglore, India
+    location: Bangalore, India
     date_start: '2020-04-01'
     date_end: '2020-06-30'
     description: Developed a video blogging platform and mapped two internal datasets with no common join column using NLP techniques.
