@@ -83,3 +83,21 @@ function updateActiveNav() {
 }
 
 window.addEventListener('scroll', updateActiveNav, { passive: true });
+
+// Mobile hamburger menu
+const navToggle = document.querySelector('.nav-toggle');
+const navLinksContainer = document.querySelector('.nav-links');
+
+navToggle.addEventListener('click', () => {
+  navToggle.classList.toggle('active');
+  navLinksContainer.classList.toggle('open');
+  document.body.style.overflow = navLinksContainer.classList.contains('open') ? 'hidden' : '';
+});
+
+navLinksContainer.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', () => {
+    navToggle.classList.remove('active');
+    navLinksContainer.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});

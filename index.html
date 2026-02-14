@@ -15,6 +15,9 @@
   <nav id="nav">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">~/somu</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
       <div class="nav-links">
         <a href="#about">about</a>
         <a href="#strata">strata.os</a>
@@ -27,24 +30,34 @@
   <!-- Hero -->
   <section id="hero" class="section hero">
     <div class="container">
-      <p class="hero-prefix">&gt; whoami</p>
-      <h1 class="hero-name">Somu Prajapati</h1>
-      <div class="hero-tagline">
-        <span class="typing-text"></span><span class="cursor">|</span>
-      </div>
-      <div class="hero-links">
-        <a href="https://github.com/somupra" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-        </a>
-        <a href="https://linkedin.com/in/somupra" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="https://x.com/somupra" target="_blank" rel="noopener" aria-label="X/Twitter">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-        </a>
-        <a href="mailto:somupra@gmail.com" aria-label="Email">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-        </a>
+      <div class="hero-split">
+        <div class="hero-left">
+          <p class="hero-prefix">&gt; whoami</p>
+          <h1 class="hero-name">Somu Prajapati</h1>
+          <div class="hero-tagline">
+            <span class="typing-text"></span><span class="cursor">|</span>
+          </div>
+          <p class="hero-intro">Polymath by function. Engineer by obsession. Builder of systems that think, trade, and scale. Raised on <span class="highlight">Kendrick</span> bars and <span class="highlight">Seedhe Maut</span> flows &mdash; I write code the way hip-hop writes verses: tight, layered, and hitting different every time.</p>
+          <div class="hero-links">
+            <a href="https://github.com/somupra" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/somupra" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://x.com/somupra" target="_blank" rel="noopener" aria-label="X/Twitter">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="mailto:somupra@gmail.com" aria-label="Email">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-photo-wrapper">
+            <img src="somu.jpg" alt="Somu Prajapati" class="hero-photo">
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -133,35 +146,51 @@
       <h2 class="section-title"><span class="accent">#</span> experience</h2>
       <div class="timeline">
         <div class="timeline-item fade-in">
-          <div class="timeline-date">2025</div>
+          <div class="timeline-date">2025 &ndash; present</div>
+          <div class="timeline-content">
+            <h3>Strata.OS</h3>
+            <p class="timeline-role">Founder & Builder</p>
+            <p class="timeline-desc">Building the AI operating system for businesses. Kernel-level tracing meets AI reasoning &mdash; one shared brain across engineering, product, and leadership. YC S26 applicant. The whole damn vision.</p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-date">Jan 2025 &ndash; Sep 2025</div>
           <div class="timeline-content">
             <h3>Alphagrep Securities</h3>
             <p class="timeline-role">Associate Quant Trader</p>
-            <p class="timeline-desc">Quantitative trading strategies in systematic markets.</p>
+            <p class="timeline-desc">HF alpha research and modelling. Low-latency execution. Market-maker strategy on Binance. Hacked my way from infra into trading within 3 months &mdash; built microstructure dashboards the traders couldn't ignore, shipped fill-quality improvements to prod, and the org chart rerouted itself around me.</p>
           </div>
         </div>
         <div class="timeline-item fade-in">
-          <div class="timeline-date">2024</div>
+          <div class="timeline-date">Jan 2024 &ndash; Oct 2024</div>
           <div class="timeline-content">
             <h3>Graviton Research Capital</h3>
             <p class="timeline-role">Software Engineer</p>
-            <p class="timeline-desc">Low-latency HFT infrastructure and systems.</p>
+            <p class="timeline-desc">Built and optimized market data systems for 5+ major crypto exchanges. TBs of data. 5M+ trades a day. Single-handedly managed HF infra with a billion dollars in flow. The kind of pressure that either breaks you or makes you dangerously calm.</p>
           </div>
         </div>
         <div class="timeline-item fade-in">
-          <div class="timeline-date">2022 &ndash; 2024</div>
+          <div class="timeline-date">Jul 2022 &ndash; Jan 2024</div>
           <div class="timeline-content">
             <h3>Quantbox Research</h3>
             <p class="timeline-role">Engineering Analyst</p>
-            <p class="timeline-desc">Quantitative research and engineering for trading systems.</p>
+            <p class="timeline-desc">End-to-end market data stack for Binance, OKX, Bybit &mdash; from scratch. Built the whole pipeline. Quant research meets raw engineering, no hand-holding.</p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-date">2021 &ndash; 2022</div>
+          <div class="timeline-content">
+            <h3>Vyomchara</h3>
+            <p class="timeline-role">CTO</p>
+            <p class="timeline-desc">AI-powered mining solutions using drones and hyperspectral sensors. Government of India pilots worth INR 65 cr+ in pipeline. IoT simulations, deep tech, and bureaucracy &mdash; shipped through all of it.</p>
           </div>
         </div>
         <div class="timeline-item fade-in">
           <div class="timeline-date">2021 &ndash; 2022</div>
           <div class="timeline-content">
             <h3>Touch</h3>
-            <p class="timeline-role">AI Lead / Advisor</p>
-            <p class="timeline-desc">Led AI strategy and technical development.</p>
+            <p class="timeline-role">AI Lead &rarr; Advisor</p>
+            <p class="timeline-desc">Built the core AI platform &mdash; SOTA NLP, collaborative-filtering RL, recommendation engines for financial literacy. Went from lead engineer to advisor because they needed the architecture more than the title.</p>
           </div>
         </div>
         <div class="timeline-item fade-in">
@@ -169,7 +198,15 @@
           <div class="timeline-content">
             <h3>Mobileum</h3>
             <p class="timeline-role">ML Engineer</p>
-            <p class="timeline-desc">Machine learning for telecom analytics.</p>
+            <p class="timeline-desc">Built a scalable, fault-tolerant, library-agnostic inference server that could serve any ML pipeline with zero extra code overhead. Telecom-scale, production-grade.</p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-date">2018 &ndash; 2022</div>
+          <div class="timeline-content">
+            <h3>IIT Kanpur</h3>
+            <p class="timeline-role">CS + Industrial Engineering</p>
+            <p class="timeline-desc">Highest placement offer across India. 1st runner up InterIIT Tech Meet. Published at CoDS-COMAD and ACM. Led one of 15 teams selected from India for the Johns Hopkins COVID-19 CT Challenge. Secretary of Programming Club. Built a C compiler in Python because why not. The kind of undergrad that treats every semester like a speedrun.</p>
           </div>
         </div>
       </div>

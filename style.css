@@ -142,6 +142,51 @@ a:hover {
   50% { opacity: 0; }
 }
 
+/* ===== Hero Split Layout ===== */
+.hero-split {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-right {
+  flex-shrink: 0;
+}
+
+.hero-photo-wrapper {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 40px rgba(0, 255, 136, 0.15), 0 0 80px rgba(0, 255, 136, 0.05);
+  transition: box-shadow 0.4s, transform 0.4s;
+}
+
+.hero-photo-wrapper:hover {
+  box-shadow: 0 0 60px rgba(0, 255, 136, 0.25), 0 0 120px rgba(0, 255, 136, 0.1);
+  transform: scale(1.03);
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 65%;
+}
+
+.hero-intro {
+  font-size: 15px;
+  color: var(--text-dim);
+  line-height: 1.8;
+  margin-bottom: 32px;
+  max-width: 520px;
+}
+
 .hero-links {
   display: flex;
   gap: 20px;
@@ -499,12 +544,109 @@ a:hover {
   transform: translateY(0);
 }
 
+/* ===== Hamburger Toggle ===== */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 101;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.nav-toggle.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .section {
     padding: 72px 0;
   }
 
+  /* Mobile nav */
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(10, 10, 10, 0.97);
+    backdrop-filter: blur(16px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 100;
+  }
+
+  .nav-links.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-links a {
+    font-size: 20px;
+    color: var(--text);
+  }
+
+  /* Hero */
+  .hero-split {
+    flex-direction: column-reverse;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .hero-photo-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-intro {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .hero-links {
+    justify-content: center;
+  }
+
+  .hero-name {
+    font-size: clamp(32px, 8vw, 48px);
+  }
+
+  .hero-tagline {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  /* Sections */
   .about-grid {
     grid-template-columns: 1fr;
     gap: 32px;
@@ -514,16 +656,67 @@ a:hover {
     grid-template-columns: 1fr;
   }
 
-  .nav-links {
-    gap: 16px;
+  .strata-headline {
+    font-size: 22px;
   }
 
-  .nav-links a {
-    font-size: 12px;
+  .strata-desc {
+    font-size: 14px;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 36px;
+  }
+
+  /* Timeline */
+  .timeline {
+    padding-left: 24px;
+  }
+
+  .timeline-item::before {
+    left: -28px;
+    width: 7px;
+    height: 7px;
+  }
+
+  .timeline-content h3 {
+    font-size: 16px;
+  }
+
+  .timeline-desc {
+    font-size: 13px;
+  }
+
+  /* Cards */
+  .strata-card {
+    padding: 20px;
+  }
+
+  .stat-card {
+    padding: 16px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .cofounder {
+    padding: 16px;
+    font-size: 13px;
+  }
+
+  .tech-tags {
+    gap: 8px;
+  }
+
+  .tag {
+    font-size: 12px;
+    padding: 5px 10px;
   }
 }
 
@@ -532,15 +725,42 @@ a:hover {
     padding: 0 16px;
   }
 
+  .hero {
+    min-height: auto;
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
   .hero-name {
-    font-size: 36px;
+    font-size: 30px;
+  }
+
+  .hero-photo-wrapper {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-intro {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .section {
+    padding: 56px 0;
   }
 
   .section-title {
-    font-size: 22px;
+    font-size: 20px;
+    margin-bottom: 28px;
   }
 
-  .nav-links {
-    gap: 12px;
+  .strata-badge {
+    font-size: 11px;
+    padding: 4px 12px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 16px;
   }
 }
