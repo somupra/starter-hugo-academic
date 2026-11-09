@@ -1,8 +1,7 @@
 // Typing animation
 const phrases = [
-  'Building Strata.OS — the AI operating system for businesses',
+  'Building something new, in stealth',
   'Systems builder. Technical founder.',
-  'eBPF + Firecracker + LLMs = Strata.OS',
   'IIT Kanpur → Quant → HFT → Founder'
 ];
 
